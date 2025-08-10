@@ -12,7 +12,7 @@ header {
     align-items: center;
     padding: 10px 10px;
     max-width: 1200px; /* Cap width to bring logo and nav towards center */
-    margin: 0px auto 40px auto; /* Center the header container */
+    margin: 40px auto 40px auto; /* Center the header container */
 }
 
 .logo h1 {
@@ -71,4 +71,18 @@ nav a {
     .gallery-masonry {
         column-count: 1; /* 1 column on mobile for full-width images */
     }
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.back-button:hover {
+    background-color: #555;
 }
