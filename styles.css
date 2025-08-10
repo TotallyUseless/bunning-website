@@ -41,17 +41,30 @@ nav a {
     text-transform: uppercase;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Larger min width for fewer, bigger images */
-    gap: 10px; /* Reduced gap for tighter layout */
+.gallery-masonry {
+    column-count: 3; /* Default to 3 columns for desktop */
+    column-gap: 10px; /* Reduced gap */
+    padding: 0 10px; /* Minimal side padding */
 }
 
-.gallery-grid img {
+.gallery-masonry img {
     width: 100%;
     height: auto;
-    min-height: 300px; /* Ensures images take vertical space naturally */
-    object-fit: cover;
+    margin-bottom: 10px; /* Space between images in the same column */
+    break-inside: avoid; /* Prevent images from breaking across columns */
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .gallery-masonry {
+        column-count: 2; /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-masonry {
+        column-count: 1; /* 1 column on mobile for full-width images */
+    }
 }
 
 section {
