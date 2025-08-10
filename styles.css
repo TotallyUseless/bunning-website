@@ -73,6 +73,16 @@ nav a {
     }
 }
 
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section#info {
+    text-align: center; /* Center h2, p, and button */
+}
+
 .back-button {
     margin-top: 20px;
     padding: 10px 20px;
