@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0px;
     max-width: 1200px; /* Cap width to bring logo and nav towards center */
     margin: 0 auto; /* Center the header container */
 }
