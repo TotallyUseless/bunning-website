@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Define fallback local images (update with your actual file names/paths)
     const fallbackImages = [
         'images/image1.jpg',
-        'images/image2.jpg',
-        'images/image3.jpg',
-        'images/image4.jpg',
-        'images/image5.jpg',
-        'images/image6.jpg',
-        'images/image7.jpg',
-        'images/image8.jpg',
-        'images/image9.jpg',
+        'images/image2.png',
+        'images/image3.png',
+        'images/image4.png',
+        'images/image5.png',
+        'images/image6.png',
+        'images/image7.png',
+        'images/image8.png',
+        'images/image9.png',
         // Add more as needed
     ];
 
