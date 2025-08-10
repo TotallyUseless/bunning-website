@@ -45,6 +45,8 @@ nav a {
     column-count: 3; /* Default to 3 columns for desktop */
     column-gap: 10px; /* Reduced gap */
     padding: 0 10px; /* Minimal side padding */
+    max-width: 1200px; /* Cap the overall gallery width to limit image sizes */
+    margin: 0 auto; /* Center the gallery */
 }
 
 .gallery-masonry img {
@@ -53,6 +55,8 @@ nav a {
     margin-bottom: 10px; /* Space between images in the same column */
     break-inside: avoid; /* Prevent images from breaking across columns */
     display: block;
+    max-height: 800px; /* Optional: Cap individual image height to prevent very tall images */
+    object-fit: contain; /* Changed to contain to show full image without cropping, but capped */
 }
 
 @media (max-width: 1024px) {
