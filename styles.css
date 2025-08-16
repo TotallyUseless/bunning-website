@@ -47,7 +47,7 @@ nav a {
     column-count: 3; /* Default to 3 columns for desktop */
     column-gap: 0px; /* Reduced gap */
     padding: 0 10px; /* Minimal side padding */
-    max-width: 1600px; /* Cap the overall gallery width to limit image sizes */
+    max-width: 1800px; /* Cap the overall gallery width to limit image sizes */
     margin: 0 auto; /* Center the gallery */
 }
 
